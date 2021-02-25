@@ -1,5 +1,8 @@
 import numpy as np
+from collections import Counter
 
+def euclidean_distance(x1, x2):
+    return np.sqrt(np.sum((x1-x2)**2))
 
 class KNN:
 
@@ -15,4 +18,12 @@ class KNN:
         return np.array(predicted_labels)
 
     def _predict(self, x):
-        pass
+        # compute distance
+        distances = [euclidean_distance(x, x_train) for x_train in self.X_train] # calculates distance from x to all x values in X_train
+        # get k nearest samples, labels
+        k_index = np.argsort(distances)[:self.k] # slicing
+        k_nearest_labels = [self.y_train[i] for i in k_index]
+        # maturity vote, most common class label
+        most_common = Counter(k_nearest_labels).most_common(1)
+        return most_common[0][0]
+
