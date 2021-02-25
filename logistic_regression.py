@@ -9,7 +9,7 @@ class LogisticRegression:
         self.weights = None
         self.bias = None
 
-    def fit(self, X, y): # X is a numpy nd vector where n is samples and d is labels
+    def fit(self, X, y): # X is a numpy nd vector where n is samples and d is features
         # init params
         n_samples, n_features = X.shape # This loads the first dimension of shape into samples and the second into features
         self.weights = np.zeros(n_features)
