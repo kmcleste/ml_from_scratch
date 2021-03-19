@@ -1,4 +1,5 @@
 # ml_from_scratch
-
-The goal of this repository is to document my journey learning various algorithms and machine learning processes.
-I intend to include projects of the following: KNN, Linear Regression, Logistic Regression, Naive Bayes, Perceptron, SVM, Decision Tree, Random Forest, PCA, K-Means, AdaBoost, and LDA.
+<br>
+Following the guidance of "Python Engineer" on Youtube (https://www.youtube.com/channel/UCbXgNpp0jedKWcQiULLbDTA)
+<br><br>
+The goal of this exercise is to recreate common algorithms by using as few libraries as possible.
