@@ -1,4 +1,3 @@
-
 import numpy as np
 
 # now partition the data 
